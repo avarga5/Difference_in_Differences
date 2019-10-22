@@ -16,14 +16,13 @@ T_it is an indicator variable that takes a one when an individual has been treat
 
 Part 1: Check for autocorrelation
 1) Simulate a model in which there are ten periods
-1a) such that αlpha_i ∼ N(2, 4), αlpha_t ∼ N(1, 2), θ = 5, e_it = 0.8uit + 0.2e_it−1 and u ∼ N(0, 2) except in period 1 when e_it = u_it
-1b) Let a permanent treatment be randomly assigned in period 7 with a probability of 0.5 (such that T reatit = 1 for treated individuals in the
-treatment period and all subsequent periods). 
+a) such that αlpha_i ∼ N(2, 4), αlpha_t ∼ N(1, 2), θ = 5, e_it = 0.8uit + 0.2e_it−1 and u ∼ N(0, 2) except in period 1 when e_it = u_it
+b) Let a permanent treatment be randomly assigned in period 7 with a probability of 0.5 (such that T reatit = 1 for treated individuals in the treatment period and all subsequent periods). 
 2) Run 500 replications with a panel of 200 individuals where you save the estimated treatment effect, its standard error estimate, and 
 whether you reject H0 : θ = 5 at the five-percent level.
-2a) Do this first while assuming that the errors are iid.
-2b) Again while allowing for heteroskedasticity-robust standard errors
-2c) Lastly,  allow the errors to be correlated within individuals over time by clustering
+a) Do this first while assuming that the errors are iid.
+b) Again while allowing for heteroskedasticity-robust standard errors
+c) Lastly,  allow the errors to be correlated within individuals over time by clustering
 
 Part 2:
 1) Similar setup to part 1, but instead of having treatment be randomly assigned, it will be based on the outcome that is observed in 
